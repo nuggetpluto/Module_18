@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Игры</title>
+</head>
+<body>
+    <h1>Игры</h1>
+    <ul>
+        {% for game, button in games.items %}
+        <li>{{ game }} <button>{{ button }}</button></li>
+        {% endfor %}
+    </ul>
+    <a href="/platform/"><button>Вернуться обратно</button></a>
+</body>
+</html>
